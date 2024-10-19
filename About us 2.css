@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: black;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    grid-template-columns:1fr 0.61fr 1fr;
+    display: grid;
+    width: 1400px;
+    height: 100px;
+    border: 2px groove #282828;
+    border-radius: 30px;
+}
+
+.logo{
+    grid-column: 1;
+    width: 200px;
+    height: 100px;
+    border-right: 2px groove #282828;
+    text-align: center;
+}
+
+.logo img {
+    margin: 30px;
+}
+
+.navbar2 {
+     grid-column: 2;
+     display: grid;
+     grid-template-rows: 1fr 1fr;
+     width: 1200px;
+     height: 100px;
+}
+
+.navbar-row1 {
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    display: inline-grid;
+    height: 50px;
+    width: 1200px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px groove #282828;
+    justify-items: center;
+}
+
+
+.logo img {
+    width: 40px;
+}
+
+nav {
+    display: block;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.vl {
+    border-left: 2px groove #282828;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: 300px;
+    margin-top: 21px;
+    top: 0;
+   
+  }
+  
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    height: 50px;
+    width: 1200px;
+    justify-items: center;
+    align-items: center;
+}
+
+.signup, .login {
+    color: white;
+    margin: 250px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    align-items: center;
+}
+
+.signup:hover, .login:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 300px;
+    width: 1000px;
+    height: 500px;
+}
+
+.image-bar {
+    width: 10%; 
+    height: 100%;
+    background: url(Image1.png) ;  
+    background-size: 1000% 100%;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0 5px;
+    visibility: visible !important;
+    opacity: 1.0 !important;
+    display: block !important;
+}
+
+.image-bar:nth-child(1) { background-position: 0 0; }
+.image-bar:nth-child(2) { background-position: 900% 0; }
+.image-bar:nth-child(3) { background-position: 800% 0; }
+.image-bar:nth-child(4) { background-position: 700% 0; }
+.image-bar:nth-child(5) { background-position: 600% 0; }
+.image-bar:nth-child(6) { background-position: 500% 0; }
+.image-bar:nth-child(7) { background-position: 400% 0; }
+.image-bar:nth-child(8) { background-position: 300% 0; }
+.image-bar:nth-child(9) { background-position: 200% 0; }
+.image-bar:nth-child(10) { background-position: 100% 0; }
+
+.image-bar:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+.about-us {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    position: center;
+    margin-left: 150px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 0;
+}
+
+.about-image{
+    width: 560px;
+    height: 420px;
+    border: 2px groove #282828;
+    border-radius: 15px;
+}
+
+.about-image img {
+    width: 560px;
+    height: 627px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    padding: 20px;
+    margin: 50px;
+    width: 664px;
+    height: 429px;
+    font-family: 1em sans-serif;
+}
+
+
+.about-image h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+.about-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    padding: 10px 100px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px groove #282828;
+    width: 600px;
+    height: 50px;
+}
+
+.about-text .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.aim {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    font: 1em sans-serif;
+}
+
+.aim-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aim-text {
+    padding: 20px;
+    max-width: 600px;
+}
+
+.aim-image img {
+    width: 520px;
+    height: 400px;
+    border-radius: 10px;
+    border: 2px groove #282828;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.aim-image-text {
+    font: 1em sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 260px;
+}
+
+.aim-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.aim-image {
+    max-width: 50%;
+}
+
+.aim-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.image-container1 {
+    background: url('page\ 3.jfif') no-repeat center center/cover;
+    height: 100vh;
+    width: 1250px;
+    margin: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.overlay-content {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.overlay-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
